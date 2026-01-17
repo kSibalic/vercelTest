@@ -668,6 +668,15 @@ h3 {
     transition: all 0.8s ease-out;
 }
 
+/* Disable scroll animation on mobile for better performance/scrolling */
+@media (max-width: 768px) {
+    .hidden-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
 .show-scroll {
     opacity: 1;
     transform: translateY(0);
